@@ -1,0 +1,1319 @@
+*
+{
+  box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+:root
+{
+	--drop-size-large: 75px;
+	--drop-size-med: 60px;
+
+	--icon-size-large: 45px;
+	--icon-size-med: 30px;
+
+	--language-icon-large: 90px; 
+
+	--UCSD-img-logo-large: 300px;
+	--UCSD-img-logo-med: 200px;
+	--UCSD-img-logo-small: 150px;
+}
+
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+
+body
+{
+  background-color: white;
+}
+
+
+ul
+{
+	list-style-type: none;
+}
+
+
+a
+{
+	text-decoration: none;
+}
+
+
+.navbar
+{
+  position: relative;
+
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	color: white;
+}
+
+
+.fixed-navbar
+{
+	position: fixed;
+	z-index: 10;
+
+	background-color: rgb(240, 240, 240);
+	color: rgb(37, 150, 190) !important;
+	border-bottom: dashed 2px rgb(37, 150, 190);
+}
+
+
+.nav-center
+{
+	background-color: inherit;
+}
+
+
+.hide-nav-center
+{
+	display: none;
+}
+
+
+.logo-img
+{
+	height: 100px;
+	width: 100px;
+	z-index: -5;
+}
+
+
+.nav-links
+{
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+	column-gap: 15px;
+	color: inherit;
+}
+
+
+.links-container
+{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+
+.nav-links a
+{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: bold;
+
+	text-shadow: 5px 15px 15px rgba(255,255,255, 0.3);
+	color: inherit;
+}
+
+.nav-links a:hover
+{
+	color: #2596be;
+	text-shadow: none;
+}
+
+.nav-btn
+{
+	height: 65px;
+	width: 40px;
+
+	font-size: 1.6rem;
+	font-weight: bold;
+
+	background-color: rgba(245,245,245);
+	box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+	border-radius: 0.5rem;
+	display: none;
+}
+
+.fixed-links
+{
+	color:rgb(37, 150, 190);
+	text-shadow: 5px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.show-nav-btn
+{
+	display: inline-block;
+}
+
+
+.navbar-dropdown
+{
+	display: none;
+}
+
+
+.show-dropdown
+{
+	display: block;
+	background-color: rgb(240, 240, 240);
+}
+
+.dropdown-links
+{
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	padding: 20px;
+
+}
+
+
+.dropdown-links a
+{
+	color: inherit;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+
+.hero
+{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -100;
+
+	background: url('./../images/hero_imageBandW.jpg');
+	background-position: bottom left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 100px;
+	justify-content: center;
+	justify-items: center;
+}
+
+
+.hero-center
+{
+	width: 55%;
+	max-width: 700px;
+	min-width: 150px;
+	height: 60%;
+	max-height: 800px;
+	padding: 10px;
+	border: solid white 2px;
+
+	align-self: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	
+
+	box-shadow:  5px 5px 5px rgb(255, 255, 255, 0.8),
+	10px 10px 10px rgb(255, 255, 255, 0.6),
+	15px 15px 15px rgba(255,255,255, 0.4);
+}
+
+
+.hero-center:hover
+{
+	border-color: #2596be;
+	color: #2596be;
+	box-shadow: 10px 10px 15px rgb(37, 150, 190, 0.8);
+	background-color: rgb(255, 255, 255, 0.85);
+}
+
+
+.hero-center h1
+{
+	font-size: 4.5rem;
+	font-family: 'Nothing You Could Do', cursive;
+	text-align: center;
+}
+
+
+.hero-center p
+{
+	font-size: 1.75rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.home-scroll-btn
+{
+	width: 60px;
+	height: 60px;
+	
+	background-color: transparent;
+	font-size: 3rem;
+	border: none;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.home-scroll-btn a
+{
+	width: 60px;
+	height: 60px;
+
+	color: transparent;
+	background-color: transparent;
+	color: white;
+	border-radius: 50%;
+	font-size: 4rem;
+
+	animation-name: upDown;
+	animation-duration: 2500ms;
+	animation-iteration-count: infinite;
+}
+
+.home-scroll-btn i
+{
+	border-radius: 50%;
+}
+
+.home-scroll-btn i:hover
+{
+	color: #2596be;
+	background-color: white;
+	border: solid white 2px;
+}
+
+@keyframes upDown
+{
+	0% {transform: scale(1);}
+	50% {transform: scale(1.2);}
+	/* 100% {transfrom: scale(1)} */
+}
+
+
+main
+{
+	position: absolute;
+	width: 100vw;
+	height: auto;
+	top: 100vh;
+	left: 0px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+section
+{
+	padding-bottom: 60px;
+}
+
+.section-header
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 3rem;
+	text-align: center;
+}
+
+
+.odd-header
+{
+	color: rgb(37, 150, 190);
+}
+
+
+.even-header
+{
+	color: red;
+}
+
+
+.projects-section
+{
+	width: 100vw;
+	height: auto;
+}
+
+.projects-center
+{
+	padding-left: 90px;
+	padding-right: 90px;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 5px;
+	grid-template-rows: auto;
+	justify-content: center;
+	justify-items: center;
+	column-gap: 15px;
+	row-gap: 50px;	
+}
+
+.project-container
+{
+	position: relative;
+	height: auto;
+	width: auto;
+
+	background-color: rgb(245,245,245);
+	padding: 15px;
+	border-radius: 0.5rem;
+	box-shadow: inset 8px 8px 10px rgba(0,0,0, 0.3);
+
+	display: flex;
+	justify-content: center;
+}
+
+
+.odd-container
+{
+	color:rgb(37, 150, 190);
+}
+
+
+.even-container
+{
+	color: red;
+}
+
+
+.project-info-center
+{
+	display: inline-block;
+	height: auto;
+	flex-basis: auto;
+	
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	row-gap: 5px;
+}
+
+
+.project-title
+{
+	font-size: 2.25rem;
+	font-weight: bold;
+	text-align: center;
+	color: inherit;
+	font-family: 'Nothing You Could Do', cursive;
+
+	align-self: center;
+}
+
+
+.project-img
+{
+	aspect-ratio: 3/2;
+	height: 225px;
+	border-radius: 0.5rem;
+}
+
+
+.project-desc
+{
+	font-size: 1rem;
+	word-wrap: break-word;
+	width: 60%;
+	justify-self: center;
+	color: black;
+}
+
+
+.icon-list
+{
+	display: flex;
+	column-gap: 10px;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+
+.icon-list li
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.icon-img
+{
+	height: var(--icon-size-large);
+	width: var(--icon-size-large);
+
+	border: none;
+}
+
+
+.project-overlay
+{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 100%;
+	height: 100%;
+	border-radius: 0.5rem;
+	background-color: rgba(0, 0, 0, 0.5);	
+}
+
+
+.show-project-overlay
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	justify-items: center;
+	row-gap: 10px;
+	padding: 10px;
+}
+
+
+.project-overlay p
+{
+	width: auto;
+	height: auto;
+
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: white;
+}
+
+
+.overlay-btn-container
+{
+	background-color: transparent;
+}
+
+
+.overlay-btn-container button
+{
+	background-color: transparent;
+	border: none;
+}
+
+
+.project-btn
+{
+	width: auto;
+	height: auto;
+
+	background-color: transparent;
+	color: white;
+	border-radius: 50%;
+	/* border: solid 2px white; */
+
+	
+}
+
+
+.project-btn i
+{
+	aspect-ratio: 1/1;
+	width: 50px;
+	border-radius: 50%;
+
+	color: white;
+	padding: 3px;
+	font-size: 2.50rem;
+	font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.project-btn i:hover
+{
+	border-color:rgb(37, 150, 190);
+	color:rgb(37, 150, 190);
+	background-color: rgba(255,255,255, 0.85);
+	transform: scale(1.1);
+}
+
+
+
+
+.red-bold
+{
+	color: red;
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+
+.red-bold::before
+{
+	content: '"';
+}
+
+
+.red-bold::after
+{
+	content: '"';
+}
+
+
+.about-section
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: rgb(240, 240, 240);
+}
+
+
+.about-center
+{
+	width: auto;
+	height: auto;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.skills-container
+{
+	width: calc(50% + 50px);
+	background-color:rgb(37, 150, 190);
+	padding: 10px;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;	
+}
+
+
+.about-span
+{
+	color: white;
+	font-size: 2.5rem;
+	font-family: 'Nothing You Could Do', cursive;
+	text-align: center;
+}
+
+
+.icons-container
+{
+	width: auto;
+	padding: 10px;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(var(--icon-size-med), var(--language-icon-large)));	
+}
+
+.education-container
+{
+	background-color: red;
+	width: calc(50% + 50px);
+	padding: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.ucsd-logo
+{
+	aspect-ratio: 3/1;
+	width: var(--UCSD-img-logo-large);
+}
+
+
+.education-center p
+{
+	color: white;
+	font-size: 1.25rem;
+	width: var(--UCSD-img-logo-large);
+}
+
+.ucsd-span
+{
+	font-size: 1.5rem;
+	font-weight: bold;
+	color:midnightblue;
+	font-style: italic;
+}
+
+
+.resume-section
+{
+	min-height: 400px;
+	max-height: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.resume-center
+{
+	position: relative;
+	height: auto;
+	background-color: transparent;
+	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.pdf-img
+{
+	aspect-ratio: 3/4;
+	width: 400px;
+	object-fit: cover;
+	object-position: left bottom;
+	background-color: red;
+}
+
+
+.resume-overlay
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+
+.show-resume
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+
+.resume-overlay button
+{
+	width: 150px;
+	height: 45px;
+
+	background-color: transparent;
+	color: white;
+	border: solid 3px white;
+
+	font-size: 1.25rem;
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+}
+
+
+.resume-overlay button:hover
+{
+	border-color:rgb(37, 150, 190);
+	color:rgb(37, 150, 190);
+	background-color: rgba(255,255,255, 0.85);
+	transform: scale(1.1);
+}
+
+
+.resume-overlay a
+{
+	color: inherit;
+}
+
+
+.download-resume-btn
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+.contact-section
+{
+	background-color: rgb(240, 240, 240);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+
+.contact-center
+{
+	width: 60%;
+	height: auto;
+	background-color: rgb(37, 150, 190);
+	border-radius: 0.5rem;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.text-input
+{
+	border-radius: 0.25rem;
+	padding-left: 5px;
+	height: 40px;
+}
+
+
+#contact-name
+{
+	grid-area: name;
+}
+
+
+#contact-email
+{
+	grid-area: email;
+}
+
+
+#contact-subject
+{
+	grid-area: subject;
+}
+
+
+#contact-message
+{
+	grid-area: message;
+	justify-self: stretch;
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+
+
+#contact-btn
+{
+	grid-area: button;
+	background-color: gray;
+	background-color: red;
+	border-color: white;
+	color: white;
+	height: 40px;
+	width: 75%;
+	justify-self: end;
+	font-weight: bold;
+	font-size: 1rem;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+#contact-btn:hover
+{
+	transform: scale(1.1);
+	color:rgb(37, 150, 190);
+	background-color: rgba(255,255,255, 0.85);
+	/* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3); */
+}
+
+
+
+.contact-form
+{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+
+	display: grid;
+	justify-content: center;
+	row-gap: 15px;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: auto;
+	grid-template-areas: 
+						 'name name name . '
+						 'email email email . '
+						 'subject subject subject . '
+						 'message message message message'
+						 '. . button button';
+}
+
+
+footer
+{
+	
+	height: 400px;
+	width: 100%;
+	padding: 30px;
+	background-color: rgb(250, 250, 250);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.drops
+{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.drop
+{
+	width: 200px;
+	height: 200px;
+	background-color: transparent;
+	border: solid transparent 2px; 
+
+	position: absolute;
+	border-radius: 40% 60% 45% 55% / 62% 65% 35% 38%;
+
+	 box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+	 						 15px 25px 10px rgba(0, 0, 0, 0.1),
+							 15px 20px 20px rgba(0, 0, 0, 0.05),
+							 inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: border-radius linear 1500ms, border ease-out 500ms;
+}
+
+
+
+
+
+.drop::before
+{
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	top: 20px;
+	left: 45px;
+
+	background-color: white;
+	border-radius: 67% 33% 45% 55% / 62% 65% 35% 38%;
+}
+
+
+
+.drop::after
+{
+	content: "";
+	position: absolute;
+	height: 15px;
+	width: 10px;
+	top: 30px;
+	left: 75px;
+
+	background-color: white;
+	border-radius: 52% 48% 45% 55% / 62% 42% 58% 38%;
+}
+
+
+.drop:nth-child(2)
+{
+	transform: scale(0.5) translate(350px, 100px);
+}
+
+
+.drop:nth-child(3)
+{
+	border-radius: 70% 30% 56% 44% / 52% 74% 26% 48%;
+	transform: scale(0.6) translate(-225px, 200px);
+}
+
+
+.drop:nth-child(4)
+{
+	border-radius: 55% 45% 45% 55% / 48% 51% 49% 52%;
+	transform: scale(0.6) translate(-275px, -185px);
+}
+
+
+.drop:nth-child(5)
+{
+	border-radius: 55% 45% 45% 55% / 48% 51% 49% 52%;
+	transform: scale(0.75) translate(200px, -160px);
+}
+
+
+.drop:hover
+{
+	border-radius: 31% 69% 29% 71% / 44% 34% 66% 56%;
+	border: solid rgba(0, 0, 0, 0.1) 2px;
+}
+
+
+.water-drop-name
+{
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.75rem;
+	color: rgb(37, 150, 190);
+	text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1),
+							 5px -5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.water-drop-desc
+{
+	width: 90%;
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	color: red;
+	text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1),
+							 5px -5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*************** Media Queries ***************/
+@media screen and (max-width: 1200px)
+{
+	.project-img
+	{
+		height: 175px;
+	}
+}
+
+
+@media screen and (max-width: 900px)
+{
+	.projects-center
+	{
+		padding: 30px;
+	}
+	 .project-desc
+	 {
+		font-size: 0.8rem;
+	 }
+
+
+	 .project-img
+	 {
+		height: 125px;
+	 }
+
+
+	 .project-title
+	 {
+		font-size: 1.75rem;
+	 }
+
+	 .icon-img
+	 {
+		width: 45px;
+		height: 45px;
+	 }
+}
+
+
+@media screen and (max-width: 750px)
+{
+	.nav-links a
+	{
+		font-size: 1.25rem;
+		justify-self: center;
+	}
+
+	
+	.projects-center
+	{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.project-container
+	{
+		row-gap: 20px;
+	}
+
+
+	.project-img
+	{
+		height: 150px;
+	}
+
+}
+
+
+@media screen and (max-width: 600px)
+{
+
+	.hero-center p
+	{
+		font-size: 1.5rem;
+	}
+
+	.projects-center
+	{
+		grid-template-columns: 1fr;
+		justify-items: stretch;
+	}
+
+
+	.project-img
+	{
+		height: 175px;
+	}
+}
+
+
+@media screen and (max-width: 500px)
+{
+	.ucsd-logo
+	{
+		width: var(--UCSD-img-logo-med);
+	}
+
+
+	.education-center p
+	{
+		width: var(--UCSD-img-logo-med);
+		font-size: 1rem;
+		text-align: center;
+	}
+
+
+	.ucsd-span
+	{
+		font-size: 1.25rem;
+	}
+
+
+	.pdf-img
+	{
+		width: 300px;
+	}
+
+	.resume-overlay button
+	{
+		width: 125px;
+	}
+
+
+	.drop
+	{
+		width: 150px;
+		height: 150px;
+	}
+
+
+	.drop:nth-child(2)
+	{
+		transform: scale(0.5) translate(275px, 100px);
+	}
+
+
+	.drop:nth-child(3)
+	{
+		transform: scale(0.6) translate(-200px, 150px);
+	}
+
+
+	.drop:nth-child(4)
+	{
+		transform: scale(0.6) translate(-200px, -185px);
+	}
+
+
+	.drop:nth-child(5)
+	{
+		transform: scale(0.75) translate(150px, -160px);
+	}
+}
+
+
+
+@media screen and (max-width: 450px)
+{
+	.navbar
+	{
+		color: rgb(37, 150, 190);
+		padding: 15px;
+	}
+
+
+	.nav-links
+	{
+		display: none;
+	}
+
+
+	.nav-btn
+	{
+		display: inline-block;
+		color: black;
+	}
+
+	.nav-btn:hover
+	{
+		color:rgb(37, 150, 190);
+		border-color:rgb(37, 150, 190);
+		transform: scale(1.1);
+	}
+
+
+	.hero-center h1
+	{
+		font-size: 3rem;
+	}
+
+
+	.hero
+	{
+		padding: 5px;
+	}
+
+	.red-bold
+	{
+		font-size: 1.5rem;
+	}
+
+
+	.hero-center p
+	{
+		font-size: 1.25rem;
+	}
+
+
+	.project-title
+	{
+	 font-size: 2rem;
+	}
+
+
+	.project-img
+	{
+		height: 125px;
+	}
+
+
+	.icon-img
+	{
+		width: 30px;
+		height: 30px;
+	}
+
+
+	.about-span
+	{
+		font-size: 2rem;
+	}
+
+
+	.contact-center
+	{
+		width: 85%;
+	}
+
+	.contact-form
+	{
+		grid-template-areas: 
+						 'name name name name '
+						 'email email email email '
+						 'subject subject subject subject '
+						 'message message message message'
+						 '. button button button';
+	}
+}
+
+
+@media screen and (max-width: 350px)
+{
+	.ucsd-logo
+	{
+		width: var(--UCSD-img-logo-small);
+	}
+
+	.education-center p
+	{
+		width: var(--UCSD-img-logo-small);
+	}
+
+	.pdf-img
+	{
+		aspect-ratio: 3/4;
+		width: 200px;
+	}
+
+	.show-resume
+	{
+		column-gap: 10px;
+	}
+
+	.resume-overlay button
+	{
+		width: 95px;
+		height: 45px;
+		font-size: 0.9rem;
+	}
+	
+
+	#contact-message
+	{
+		font-size: 0.85rem;
+	}
+	
+}
+
+
+@media screen and (max-width: 300px)
+{
+	.hero-center
+	{
+		width: 200px;
+		padding: 5px;
+	}
+
+
+	.hero-center p
+	{
+		font-size: 0.8rem;
+	}
+
+	.red-bold
+	{
+		font-size: 1rem;
+	}
+
+	.skills-container span
+	{
+		color: white;
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+

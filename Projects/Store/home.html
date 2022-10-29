@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./style.css">
+
+      <title>Cortez Store | Home</title>
+   </head>
+
+   <body>
+      
+      <!-- Navigatoin Bar -->
+      <nav class="navbar">
+
+         <div class="nav-center">
+            <button class="toggle-btn">
+               <i class="fa-solid fa-bars"></i>
+            </button>
+   
+            <!-- Links -->
+            <ul class="nav-links">
+               <li><a href="./home.html" target="_blank">Home</a></li>
+               <li><a href="./products.html" target="_blank">Products</a></li>
+               <li><a href="./about.html" target="_blank">About</a></li>
+            </ul>
+            <!-- Logo -->
+            <img src="./Images/StoreLogoNB-2.png" class="navbar-logo" alt="">
+   
+            <!-- Cart Icon -->
+            <div class="cart-div">
+               <button class="cart-btn">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <p class="cart-count" data-count="0">0</p>
+               </button>
+               
+            </div>
+         </div>
+      </nav>
+
+      <!-- Sidebar -->
+      <aside class="sidebar-overlay">
+         <div class="sidebar-center">
+            <button class="sidebar-close-btn">
+               <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+
+               <!-- Links -->
+            <ul class="sidebar-nav-links">
+               <li><a href="./home.html" target="_blank">Home</a></li>
+               <li><a href="./products.html" target="_blank">Products</a></li>
+               <li><a href="./about.html" target="_blank">About</a></li>
+            </ul>
+         </div>
+      </aside>
+
+
+      <!-- Hero Container -->
+      <section class="hero">
+
+         <div class="hero-container">
+            <h1 class="slanted-text">Rest, Relax, Unwind</h1>
+            <h3>We Help Bring Beauty Into Your Home</h3>
+            <button class="all-products-btn">
+               <a href="./products.html" target="_blank">Shop All Products</a>
+            </button>
+         </div>
+      </section>
+
+
+      <section class="featured">
+         <h1> <span>/</span> Featured Products</h1>
+
+         <div class="products-container">
+             <!-- Single Product -->
+            <!-- <div class="single-product">
+               <img src="./images/couch.jpg" alt="" class="product-img">
+               <p class="product-name">Name: #1</p>
+               <p class="product-company">Company</p>
+               <p class="product-price">$1000</p>
+
+               <div class="product-btns">
+                  <button class="search-btn product-btn">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                  <button class="add-to-cart-btn product-btn">
+                     <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+               </div>
+            </div> -->
+         </div>
+      </section>
+
+
+      <!-- Customer Shopping Cart -->
+      <aside class="cart-overlay">
+         <div class="cart-container">
+            <button class="close-btn">
+               <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+
+            <h3 class="cart-title">Your Cart</h3>
+
+            <div class="cart-center">
+               <!-- Single Cart Item -->
+               <!-- <div class="cart-item">
+                  <img src="./images/Couch.jpg" alt="">
+
+                  <div class="item-info" data-id="*temp*">
+                     <h3 class="item-name">Name</h3>
+                     <h3 class="item-price">$50</h3>
+                     <button class="remove-item-btn">Remove Item</button>
+                  </div>
+
+                  <div class="item-btns">
+                     <button class="increment-btn ctr-btn">
+                        <i class="fa-solid fa-chevron-up"></i>
+                     </button>
+                     <span class="item-ctr">0</span>
+                     <button class="decrement-btn ctr-btn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                     </button>
+                  </div>
+               </div> -->
+
+            </div>
+
+            <h3 class="cart-total" data-total="0">Total: $0.00</h3>
+            <button class="checkout-btn">Checkout</button>
+            
+         </div>
+      </aside>
+      
+
+      <!-- JavaScript -->
+      <script type="module" src="./app.js"></script>
+      <!-- FontAwesome -->
+      <script src="https://kit.fontawesome.com/5448d56df1.js" crossorigin="anonymous"></script>
+   </body>
+</html>

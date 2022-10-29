@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
+		<link rel="stylesheet" href="./style.css">
+
+		<title>Cortez Art Collection</title>
+	</head>
+
+	<body>
+		<header class="header">
+
+			<nav class="nav-bar">
+				<div class="nav-center">
+
+					<div class="nav-header">
+
+						<div class="logo">
+							<p>
+								Cortez Art
+							</p>
+
+							 <p>
+								Collection
+							 </p>
+						</div>
+
+						<button class="toggle-btn" type="button">
+							<i class="fas fa-bars"></i>
+						</button>
+
+
+						<div class="links-container">
+							<ul>
+								<li><a href="#our-services" target="#" data-id="#our-services">Our Services</a></li>
+								<li><a href="#artist" target="#" data-id="#artist">Artist</a></li>
+								<li><a href="#solutions" target="#" data-id="#solutions">Solutions</a></li>
+								<li><a href="#contact-us" target="#" data-id="#contact-us">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				
+			</nav>
+
+			<div class="links-dropdown">
+				<ul>
+					<li><a href="#our-services" target="#" data-id="#our-services">Our Services</a></li>
+					<li><a href="#artist" target="#" data-id="#artist">Artist</a></li>
+					<li><a href="#solutions" target="#" data-id="#solutions">Solutions</a></li>
+					<li><a href="#contact-us" target="#" data-id="#contact-us">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Banner and Hero Image -->
+			<div class="banner">
+				<div class="banner-container">
+					<h1>Bring Art Into Your Life</h1>
+					<p>
+						We've been fortunate to be able to bring art into our lives, and we will forever
+						continue to do so.
+						
+						<br><br>
+						There is an undescribable joy that comes with art and it is amplified when that
+						joy is experienced with others. 
+
+
+						</br></br>
+						As a soft power with great influence,
+
+						
+					</p>
+				</div>
+			</div>
+		</header>
+		
+
+		<section class="section-container">
+
+			<article id="our-services">
+
+				<div class="info-div" id="services-info-div" title="reverse-direction">
+
+					<div class="paragraph-div">
+						<p>
+							As we gaze at art with this <span>infectious</span> ignorance and wonderment, we want to <span>help</span> 
+							others experience the unique joy that art brings into our lives.
+						</p>
+
+						<p>
+							When art it is specifically <span>curated</span> it be utilized to convey an important message, it can be used as a
+							<span>visual</span> aid to communicate with a client, and is subtle tool that can be understood by a wide spectrum of people.  
+						</p>
+
+						<p>
+							To make art more accessible, we've decided on art rental as a <span>unique</span> solution to give people 
+							a different approach on how to utilize art.
+						</p>
+
+						<a href="#solutions" target="_self">Learn More</a>
+					</div>
+					
+
+					<div class="article-header">
+						<h2><span>Why</span></h2> 
+					</div>
+				</div>
+			</article>
+
+			<article id="artist">
+				
+
+				<div class="info-div" >
+					<div class="article-header">
+						<h2><span>Featured Artist</span></h2>
+						<a href="steve.html?firstName=Steve&lastName=Thomas" target="_blank">
+							<h3>Steve Thomas</h3>
+						</a>
+					</div>
+					
+
+					<div class="img-container"> 
+						<!-- Container for Homepage Featured Artist -->
+						<!-- Loaded Dynamically -->
+					</div>
+				</div>
+				
+				
+			</article>
+
+			<article id="solutions">
+
+				<div class="info-div" title="reverse-direction">
+					
+					
+					<div class="solutions-center">
+						
+
+					</div>
+
+					<div class="article-header">   
+						<h2><span>Solutions</span></h2>
+					</div>
+				</div>
+				
+			</article>
+
+			<article id="contact-us">
+
+				<div class="info-div">
+
+					<div class="form-popup">
+
+						<button class="close-btn" type="button">
+							<i class="fa-solid fa-circle-xmark"></i>
+						</button>
+
+						<p>
+							Thank You for the Message
+						</p>
+					</div>
+
+					<div class="article-header">
+						<h2><span>Contact Us</span></h2>
+					</div>
+
+					
+					
+					<form action="https://formsubmit.co/ec7d5f71b75f53cd31edaa6a879b615b" method="POST" class="contact-form">
+						<input type="text" name="firstName" placeholder="First Name" required>
+						<input type="text" name="lastName" placeholder="Last Name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<input type="text" name="_subject" placeholder="Subject" value="" rows="15" cols="250" reqeired>
+						<textarea type="text" name="message" placeholder="Write Your Message" cols="35" required></textarea>
+						<input type="text" name="_honey" style="display:none">
+						<button type="submit" class="form-btn">Send</button>
+				   </form>
+
+					
+				</div>
+				
+			</article>
+
+
+			<footer>
+				<div class="drops">
+						<div class="drop">
+							
+						</div>
+						<div class="drop">
+							<i class="fa-brands fa-instagram"></i>
+						</div>
+						<div class="drop"></div>
+						<div class="drop"></div>
+
+						<div class="parent-drop">
+							<div class="logo" id="drop-logo">
+								<p>
+									Cortez Art
+								</p>
+	
+								 <p>
+									Collection
+								 </p>
+							</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		
+		<!-- JavaScript -->
+		<script type="module" src="./app.js"></script>
+		<!-- FontAwesome -->
+		<script src="https://kit.fontawesome.com/5448d56df1.js" crossorigin="anonymous"></script>
+	</body>
+</html>

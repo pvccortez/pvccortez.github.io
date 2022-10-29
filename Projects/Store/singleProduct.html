@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./productStyle.css">
+
+  <title>Cortez Store | Single Product</title>
+</head>
+
+<body>
+
+  <!-- Navigatoin Bar -->
+  <nav class="navbar">
+
+    <div class="nav-center">
+      <button class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Links -->
+      <ul class="nav-links">
+        <li><a href="./home.html" target="_blank">Home</a></li>
+        <li><a href="./products.html" target="_blank">Products</a></li>
+        <li><a href="./about.html" target="_blank">About</a></li>
+      </ul>
+      <!-- Logo -->
+      <img src="./Images/StoreLogoNB-2.png" class="navbar-logo" alt="">
+
+      <!-- Cart Icon -->
+      <div class="cart-div">
+        <button class="cart-btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p class="cart-count" data-count="0">0</p>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Sidebar -->
+  <aside class="sidebar-overlay">
+    <div class="sidebar-center">
+       <button class="sidebar-close-btn">
+          <i class="fa-regular fa-circle-xmark"></i>
+       </button>
+
+          <!-- Links -->
+       <ul class="sidebar-nav-links">
+          <li><a href="./home.html" target="_blank">Home</a></li>
+          <li><a href="./products.html" target="_blank">Products</a></li>
+          <li><a href="./about.html" target="_blank">About</a></li>
+       </ul>
+
+       </button>
+    </div>
+  </aside>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-center">
+      <h3>Home | <span>High-Back Bench</span></h3>
+    </div>
+  </section>
+
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <div class="product-center">
+      <img class='product-img' src="./Images/Couch.jpg" alt="">
+
+      <div class="info-div">
+        <h2 class="product-name">High-Back Bench</h2>
+        <h3 class="product-company">Ikea</h3>
+        <h3 class="product-price">$1000.00</h3>
+        <div class="product-colors-div">
+          span
+        </div>
+        <p class="product-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fugit itaque reiciendis impedit 
+          consequuntur facere laudantium, quidem eum necessitatibus voluptate adipisci accusantium sunt 
+          ratione quibusdam. Cumque voluptatum corrupti quas officia!
+        </p>
+      </div>
+    </div>
+
+    <button class="product-cart-button" data-id="">Add to Cart</button>
+  </section>
+
+
+  <!-- Customer Shopping Cart -->
+  <aside class="cart-overlay">
+
+    <div class="cart-container">
+      <button class="close-btn">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </button>
+
+      <h3 class="cart-title">Your Cart</h3>
+
+      <div class="cart-center">
+        <!-- Single Cart Item -->
+        <!-- <div class="cart-item">
+          <img src="./images/Couch.jpg" alt="">
+
+          <div class="item-info" data-id="*temp*">
+            <h3 class="item-name">Name</h3>
+            <h3 class="item-price">$50</h3>
+            <button class="remove-item-btn">Remove Item</button>
+          </div>
+
+          <div class="item-btns">
+            <button class="increment-btn ctr-btn">
+              <i class="fa-solid fa-chevron-up"></i>
+            </button>
+            <span class="item-ctr">0</span>
+            <button class="decrement-btn ctr-btn">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </div> -->
+
+
+        
+
+
+      </div>
+
+      <h3 class="cart-total" data-total="0">Total: $0.00</h3>
+
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- JavaScript -->
+  <script type="module" src="./singleProduct.js"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/5448d56df1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

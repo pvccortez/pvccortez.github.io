@@ -1,0 +1,138 @@
+:root
+{
+    --h3-large-font: 3rem;
+    --h3-med-font: 2rem;
+    --h3-small-font: 1rem;
+
+    --button-color: #645cff;
+    --link-color: #ffffff;
+    --body-color: #f8fafc;
+}
+
+
+
+body
+{
+    background-color: var(--body-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container
+{
+    width: 80%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo
+{
+    width: 200px;
+}
+
+
+.container h3
+{
+    font-size: var(--h3-large-font);
+}
+
+
+.input-form
+{
+    width: 60%;
+    display: flex;
+}
+
+
+.input
+{
+    flex-grow: 3;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+
+    border: #e2e8f0 1px solid;
+}
+
+
+.input::placeholder
+{
+    color: #a9a9a9;
+}
+
+
+.input:focus
+{
+    outline: none;
+}
+
+
+.submit-btn
+{
+    flex-grow: 1;
+    height: 30px;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+
+
+    border: none;
+    background-color: var(--button-color);
+    color: white;
+    font-size: 1rem;
+    
+}
+
+
+.submit-btn:hover
+{
+    color: #000;
+}
+
+
+.results
+{
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.results a
+{
+    max-width: 300px;
+    padding: 24px 32px;
+
+    background-color: var(--link-color);
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
+.results a:hover
+{
+    background-color: #000;
+    color: white;
+}
+
+.results h4
+{
+    text-align: center;
+    font-size: 1.25rem;
+    
+}
+
+
+.results p
+{
+    color: #64748b;
+}
