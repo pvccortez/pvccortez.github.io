@@ -378,6 +378,7 @@ section
 	box-shadow: inset 8px 8px 10px rgba(0,0,0, 0.3);
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
@@ -431,11 +432,11 @@ section
 
 .project-desc
 {
-	font-size: 1rem;
+	font-size: clamp(0.85, 3vw, 1rem);
 	word-wrap: break-word;
 	width: 60%;
 	justify-self: center;
-	color: black;
+	color: red;
 }
 
 
@@ -669,8 +670,7 @@ section
 
 .resume-section
 {
-	min-height: 400px;
-	max-height: 800px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -692,21 +692,8 @@ section
 	width: 400px;
 	object-fit: cover;
 	object-position: left bottom;
-	background-color: red;
 }
 
-
-.resume-overlay
-{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: none;
-}
 
 
 .show-resume
@@ -717,32 +704,50 @@ section
 	column-gap: 20px;
 }
 
-
-.resume-overlay button
+.resume-btns
 {
-	width: 150px;
-	height: 45px;
+	width: 100%;
+	height: auto;
+	padding: 10px;
 
 	background-color: transparent;
-	color: white;
-	border: solid 3px white;
-
-	font-size: 1.25rem;
-	font-weight: bold;
-	font-family: 'Playfair Display', serif;
-}
-
-
-.resume-overlay button:hover
-{
-	border-color:rgb(37, 150, 190);
-	color:rgb(37, 150, 190);
-	background-color: rgba(255,255,255, 0.85);
-	transform: scale(1.1);
+	display: flex;
+	/* background-color: darkgray; */
+	flex-direction: row;
+	justify-content: center;
+	column-gap: clamp(20px, 15px, 5px);
 }
 
 
 .resume-overlay a
+{
+	color: inherit;
+}
+
+
+.resume-btn
+{
+	width: clamp(70px, 125px, 100%);
+	padding: 3px;
+	height: auto;
+
+	border: rgb(37, 150, 190) solid 2px;
+	background-color: transparent;
+	color: rgb(37, 150, 190);	
+	font-size: clamp( 0.75rem, 3vw, 1.25rem);
+}
+
+
+.resume-btn:hover
+{
+	color: white;
+	border: white solid 2px;
+	background-color: rgb(37, 150, 190);
+	transform: scale(1.1);
+}
+
+
+.resume-btn a
 {
 	color: inherit;
 }
@@ -1038,6 +1043,11 @@ footer
 		width: 45px;
 		height: 45px;
 	 }
+
+	 .project-overlay p
+	 {
+		font-size: 0.9rem;
+	 }
 }
 
 
@@ -1087,6 +1097,12 @@ footer
 	.project-img
 	{
 		height: 175px;
+	}
+
+	.project-overlay p
+	{
+		font-size: 1.2rem;
+		
 	}
 }
 
