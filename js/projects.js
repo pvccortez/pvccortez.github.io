@@ -28,14 +28,15 @@ export function displayProject()
 
 										<div class="overlay-btn-container">
 											<button >
-												<a href="${project.link}" class="project-btn">
+												<a href="${project.githubLink}" class="project-btn">
 													<i class="fa-brands fa-github"></i>
 												</a>
 											</button>
 
 											<button>
-												<a href="#" class="project-btn">
+												<a href="${project.link}" class="project-btn">
 													<i class="fa-solid fa-code"></i>
+													test
 												</a>
 											</button>
 										</div>
