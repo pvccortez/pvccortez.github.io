@@ -7,14 +7,22 @@ export const linksData = [{name: 'Home', id: '#home'},
                {name: 'Contact', id: '#contact-section'}];
 
 
-export const projectsData = [{title: 'Furniture Store', id: 'furniture-store', 
+export const projectsData = [{title: 'Workout Log', id: 'Workout Log', 
+                              desc: `A workout log that allows users to create multiple workout sheets that
+                                     enables them to keep track of their exercises.`, 
+                              languages: ['React','Javascript', 'HTML', 'CSS'], 
+                              img: './../images/Workout_Log_Homepage.png', styleType: 'odd', 
+                              link: 'https://pvccortez.github.io/workout-log/',
+                              githubLink: 'https://github.com/pvccortez/workout-log'},
+
+                            {title: 'Furniture Store', id: 'furniture-store', 
                               desc: `An online furniture store that uses an API to obtain
                                      product data. Contains a functioning shopping cart, 
                                      single "product" page, that are dynamically populated. Also contains a 
                                      products a page that contains all the products, where users can filter 
                                      based on name, company, or price.`, 
                               languages: ['Javascript', 'HTML', 'CSS'], 
-                              img: './../images/Store_Homepage.png', styleType: 'odd', 
+                              img: './../images/Store_Homepage.png', styleType: 'even', 
                               link: './Projects/Store/home.html',
                               githubLink: 'https://github.com/pvccortez/FurnitureStore'},
                             
@@ -23,7 +31,7 @@ export const projectsData = [{title: 'Furniture Store', id: 'furniture-store',
                                      collector. Art pieces are uniformaly displayed and the artist
                                      page is dynamically populated.`, 
                               languages: ['Javascript', 'HTML', 'CSS'], 
-                              img: './../images/Art_Gallery_Homepage.png', styleType: 'even',
+                              img: './../images/Art_Gallery_Homepage.png', styleType: 'odd',
                               link: './Projects/ArtCollection/index.html',
                               githubLink: 'https://github.com/pvccortez/ArtCollection'},
                     
@@ -33,7 +41,7 @@ export const projectsData = [{title: 'Furniture Store', id: 'furniture-store',
                                      their name, and view cocktail information in a dynamically
                                      populated page.`, 
                               languages: ['Javascript', 'HTML', 'CSS'], 
-                              img: './../images/Cocktails_Homepage.png', styleType: 'odd',
+                              img: './../images/Cocktails_Homepage.png', styleType: 'even',
                               link: './Projects/Cocktails/home.html',
                               githubLink: '',},
 
@@ -41,7 +49,7 @@ export const projectsData = [{title: 'Furniture Store', id: 'furniture-store',
                               desc: `Utilizes Wikipeia's API that displays users search results
                                      in a elegant grid format.`, 
                               languages: ['Javascript', 'HTML', 'CSS'], 
-                              img: './../images/Wikipedia_Homepage.png', styleType: 'even',
+                              img: './../images/Wikipedia_Homepage.png', styleType: 'odd',
                               link: './Projects/Wikipedia/index.html',
                               githubLink: ''},  
                             ];
