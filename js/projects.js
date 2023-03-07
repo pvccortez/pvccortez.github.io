@@ -34,9 +34,8 @@ export function displayProject()
 											</button>
 
 											<button>
-												<a href="${project.link}" class="project-btn">
+												<a href="${project.link}" class="project-btn" target='_blank'>
 													<i class="fa-solid fa-code"></i>
-													test
 												</a>
 											</button>
 										</div>
